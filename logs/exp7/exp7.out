@@ -1,0 +1,1125 @@
+/home/ishan/.conda/envs/pt20/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ishan/.conda/envs/pt20/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Restart False
+ params7 is loaded as params
+devices are [0]
+T =  <module 'torchvision.transforms' from '/home/ishan/.conda/envs/pt20/lib/python3.9/site-packages/torchvision/transforms/__init__.py'>
+aug_test =  Compose(
+    Resize(size=(512, 512), interpolation=bilinear, max_size=None, antialias=None)
+    ToTensor()
+)
+aug_train =  Compose(
+    RandomResizedCrop(size=(512, 512), scale=(0.8, 1.0), ratio=(0.99, 1.01), interpolation=bilinear), antialias=None)
+    RandomHorizontalFlip(p=0.5)
+    ToTensor()
+)
+batch_size =  32
+cosine_lr_array =  [0.01, 0.2575, 0.505, 0.7525, 1.0, 1.0, 0.9987002023208935, 0.9948075671796003, 0.9883423331286095, 0.9793381141527786, 0.9678417249038154, 0.9539129373019753, 0.9376241697704493, 0.9190601107181688, 0.8983172782286181, 0.8755035182439089, 0.8507374438531606, 0.8241478186004281, 0.7958728870184782, 0.7660596558690997, 0.7348631298269113, 0.7024455055804957, 0.6689753285408839, 0.6346266165418173, 0.5995779550878426, 0.5640115688542146, 0.5281123742660557, 0.4920670180825961, 0.4560629069850751, 0.420287233213664, 0.384926001319309, 0.3501630610905968, 0.31617915168364, 0.2831509619247352, 0.2512502116714574, 0.22064275900837027, 0.19148773791921309, 0.1639367309189701, 0.13813298094746507, 0.11421064662199859, 0.09229410472111127, 0.0724973035259901, 0.0549231703816237, 0.03966307655790563, 0.02679636219297582, 0.016389923788711402, 0.008497866403054832, 0.0031612223474991596, 0.0004077378522748809, 0.0002517288084074032]
+dataset =  Chest_XRay
+input_reso =  512
+learning_rate =  0.001
+lr_reduce_factor =  2
+lr_scheduler =  cosine
+math =  <module 'math' from '/home/ishan/.conda/envs/pt20/lib/python3.9/lib-dynload/math.cpython-39-x86_64-linux-gnu.so'>
+np =  <module 'numpy' from '/home/ishan/.conda/envs/pt20/lib/python3.9/site-packages/numpy/__init__.py'>
+num_epochs =  50
+num_workers =  6
+opt_type =  adam
+pretraining =  False
+scheduler_patience =  1
+test_array =  [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48]
+v_batch_size =  32
+val_array =  [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48]
+val_freq =  3
+warmup =  True
+warmup_array =  [0.1, 1]
+Train dataset length: 5216
+Train dataset steps per epoch: 163.0
+Val dataset length: 16
+Val dataset steps per epoch: 0.5
+Test dataset length: 624
+Test dataset steps per epoch: 19.5
+Device name is cuda:0
+Only 1 GPU is available
+-------------------------------------
+Epoch 0 started
+train at epoch 0
+Learning rate is: 1e-05
+Training Epoch 0, Batch 0, Loss: 0.79602
+Training Epoch: 0, Loss: 0.3138
+Training Accuracy at Epoch 0 is 87.270
+Training Macro AP is 0.9804317197786031
+Training Prec is 0.827685546268609
+Training Recall is 0.8706781169565322
+Training f1 is 0.8442892112961968
+
+Val Epoch 0, Batch 0, Loss: 0.55186
+Val Epoch: 0, Loss: 0.5519
+Val Accuracy at Epoch 0 is 75.000
+Val Macro AP is 0.8474587912087912
+Val Prec is 0.8333333333333333
+Val Recall is 0.75
+Val f1 is 0.7333333333333334
+Test Epoch 0, Batch 0, Loss: 0.22979
+Test Epoch: 0, Loss: 0.6346
+Test Accuracy at Epoch 0 is 74.679
+Test Macro AP is 0.8983115394847248
+Test Prec is 0.7558590526489519
+Test Recall is 0.7717948717948717
+Test f1 is 0.7445882511424515
+++++++++++++++++++++++++++++++
+Epoch 0 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-0 is 61.5832314491272
+
+-------------------------------------
+Epoch 1 started
+train at epoch 1
+Learning rate is: 0.0002575
+Training Epoch 1, Batch 0, Loss: 0.23347
+Training Epoch: 1, Loss: 0.1989
+Training Accuracy at Epoch 1 is 92.293
+Training Macro AP is 0.9889622192549438
+Training Prec is 0.900931317591509
+Training Recall is 0.8961945587067908
+Training f1 is 0.8985238170181209
+
+Time taken for Epoch-1 is 54.672197341918945
+
+-------------------------------------
+Epoch 2 started
+train at epoch 2
+Learning rate is: 0.000505
+Training Epoch 2, Batch 0, Loss: 0.07613
+Training Epoch: 2, Loss: 0.1433
+Training Accuracy at Epoch 2 is 94.498
+Training Macro AP is 0.9937466080071762
+Training Prec is 0.9306027588964414
+Training Recall is 0.9244435784561353
+Training f1 is 0.9274631890676509
+
+Val Epoch 2, Batch 0, Loss: 0.78344
+Val Epoch: 2, Loss: 0.7834
+Val Accuracy at Epoch 2 is 56.250
+Val Macro AP is 0.8029647435897436
+Val Prec is 0.5634920634920635
+Val Recall is 0.5625
+Val f1 is 0.5607843137254902
+Test Epoch 2, Batch 0, Loss: 0.24370
+Test Epoch: 2, Loss: 0.4875
+Test Accuracy at Epoch 2 is 78.846
+Test Macro AP is 0.905562380114263
+Test Prec is 0.7854440789473685
+Test Recall is 0.8042735042735043
+Test f1 is 0.7843656735954763
+++++++++++++++++++++++++++++++
+Epoch 2 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-2 is 52.616055488586426
+
+-------------------------------------
+Epoch 3 started
+train at epoch 3
+Learning rate is: 0.0007524999999999999
+Training Epoch 3, Batch 0, Loss: 0.10193
+Training Epoch: 3, Loss: 0.1404
+Training Accuracy at Epoch 3 is 94.383
+Training Macro AP is 0.9944113750727417
+Training Prec is 0.9263874259748394
+Training Recall is 0.9265952707416227
+Training f1 is 0.926491278472588
+
+Time taken for Epoch-3 is 51.44965600967407
+
+-------------------------------------
+Epoch 4 started
+train at epoch 4
+Learning rate is: 0.001
+Training Epoch 4, Batch 0, Loss: 0.13485
+Training Epoch: 4, Loss: 0.1257
+Training Accuracy at Epoch 4 is 95.092
+Training Macro AP is 0.9949131648974394
+Training Prec is 0.936491204954213
+Training Recall is 0.9347829977628634
+Training f1 is 0.9356325402899182
+
+Val Epoch 4, Batch 0, Loss: 0.98082
+Val Epoch: 4, Loss: 0.9808
+Val Accuracy at Epoch 4 is 56.250
+Val Macro AP is 0.6546092796092796
+Val Prec is 0.7666666666666666
+Val Recall is 0.5625
+Val f1 is 0.4589371980676329
+Test Epoch 4, Batch 0, Loss: 0.02859
+Test Epoch: 4, Loss: 0.6999
+Test Accuracy at Epoch 4 is 64.103
+Test Macro AP is 0.940247148309407
+Test Prec is 0.7288260421269701
+Test Recall is 0.7042735042735043
+Test f1 is 0.6388888888888888
+Time taken for Epoch-4 is 70.29328179359436
+
+-------------------------------------
+Epoch 5 started
+train at epoch 5
+Learning rate is: 0.001
+Training Epoch 5, Batch 0, Loss: 0.08291
+Training Epoch: 5, Loss: 0.1204
+Training Accuracy at Epoch 5 is 95.207
+Training Macro AP is 0.9959661584924335
+Training Prec is 0.9385678656570626
+Training Recall is 0.9355571913112506
+Training f1 is 0.9370484773069416
+
+Time taken for Epoch-5 is 48.01706790924072
+
+-------------------------------------
+Epoch 6 started
+train at epoch 6
+Learning rate is: 0.0009987002023208935
+Training Epoch 6, Batch 0, Loss: 0.08662
+Training Epoch: 6, Loss: 0.1043
+Training Accuracy at Epoch 6 is 96.146
+Training Macro AP is 0.9968814695756357
+Training Prec is 0.9512537143353941
+Training Recall is 0.9474877198046716
+Training f1 is 0.949349571755812
+
+Val Epoch 6, Batch 0, Loss: 1.04314
+Val Epoch: 6, Loss: 1.0431
+Val Accuracy at Epoch 6 is 43.750
+Val Macro AP is 0.49878316128316125
+Val Prec is 0.39743589743589747
+Val Recall is 0.4375
+Val f1 is 0.37662337662337664
+Test Epoch 6, Batch 0, Loss: 0.19125
+Test Epoch: 6, Loss: 0.5162
+Test Accuracy at Epoch 6 is 75.481
+Test Macro AP is 0.9238387837649324
+Test Prec is 0.7654650622320921
+Test Recall is 0.7816239316239316
+Test f1 is 0.7528879179813175
+Time taken for Epoch-6 is 47.874654054641724
+
+-------------------------------------
+Epoch 7 started
+train at epoch 7
+Learning rate is: 0.0009948075671796003
+Training Epoch 7, Batch 0, Loss: 0.06968
+Training Epoch: 7, Loss: 0.0972
+Training Accuracy at Epoch 7 is 96.223
+Training Macro AP is 0.9971722331592994
+Training Prec is 0.9520615958465648
+Training Recall is 0.9487353202953982
+Training f1 is 0.950381991046998
+
+Time taken for Epoch-7 is 39.85299777984619
+
+-------------------------------------
+Epoch 8 started
+train at epoch 8
+Learning rate is: 0.0009883423331286095
+Training Epoch 8, Batch 0, Loss: 0.14667
+Training Epoch: 8, Loss: 0.0969
+Training Accuracy at Epoch 8 is 96.204
+Training Macro AP is 0.9973065730334972
+Training Prec is 0.9511031504979
+Training Recall is 0.9493377594958023
+Training f1 is 0.9502157928804835
+
+Val Epoch 8, Batch 0, Loss: 1.34246
+Val Epoch: 8, Loss: 1.3425
+Val Accuracy at Epoch 8 is 56.250
+Val Macro AP is 0.7971882284382285
+Val Prec is 0.7666666666666666
+Val Recall is 0.5625
+Val f1 is 0.4589371980676329
+Test Epoch 8, Batch 0, Loss: 0.07694
+Test Epoch: 8, Loss: 0.6112
+Test Accuracy at Epoch 8 is 70.673
+Test Macro AP is 0.9622207472000427
+Test Prec is 0.7638582914910035
+Test Recall is 0.7585470085470085
+Test f1 is 0.7066396064276631
+Time taken for Epoch-8 is 53.82737731933594
+
+-------------------------------------
+Epoch 9 started
+train at epoch 9
+Learning rate is: 0.0009793381141527785
+Training Epoch 9, Batch 0, Loss: 0.01610
+Training Epoch: 9, Loss: 0.0915
+Training Accuracy at Epoch 9 is 96.434
+Training Macro AP is 0.9974880771179228
+Training Prec is 0.9541263116448697
+Training Recall is 0.9523490895095139
+Training f1 is 0.9532330175543937
+
+Time taken for Epoch-9 is 44.64152932167053
+
+-------------------------------------
+Epoch 10 started
+train at epoch 10
+Learning rate is: 0.0009678417249038154
+Training Epoch 10, Batch 0, Loss: 0.11673
+Training Epoch: 10, Loss: 0.0831
+Training Accuracy at Epoch 10 is 96.856
+Training Macro AP is 0.9980005429588934
+Training Prec is 0.9609379054067843
+Training Recall is 0.956406918284381
+Training f1 is 0.9586426826096248
+
+Val Epoch 10, Batch 0, Loss: 0.61368
+Val Epoch: 10, Loss: 0.6137
+Val Accuracy at Epoch 10 is 56.250
+Val Macro AP is 0.8258928571428572
+Val Prec is 0.6025641025641025
+Val Recall is 0.5625
+Val f1 is 0.5151515151515151
+Test Epoch 10, Batch 0, Loss: 0.10948
+Test Epoch: 10, Loss: 0.3129
+Test Accuracy at Epoch 10 is 85.577
+Test Macro AP is 0.9713839469575178
+Test Prec is 0.8482142857142857
+Test Recall is 0.8692307692307693
+Test f1 is 0.8518096323738957
+++++++++++++++++++++++++++++++
+Epoch 10 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-10 is 47.41861891746521
+
+-------------------------------------
+Epoch 11 started
+train at epoch 11
+Learning rate is: 0.0009539129373019754
+Training Epoch 11, Batch 0, Loss: 0.04537
+Training Epoch: 11, Loss: 0.0788
+Training Accuracy at Epoch 11 is 96.817
+Training Macro AP is 0.9982592983284839
+Training Prec is 0.9583432681436579
+Training Recall is 0.9583432681436579
+Training f1 is 0.9583432681436579
+
+Time taken for Epoch-11 is 39.59689116477966
+
+-------------------------------------
+Epoch 12 started
+train at epoch 12
+Learning rate is: 0.0009376241697704493
+Training Epoch 12, Batch 0, Loss: 0.06103
+Training Epoch: 12, Loss: 0.0738
+Training Accuracy at Epoch 12 is 97.297
+Training Macro AP is 0.9984274337321619
+Training Prec is 0.9645123552869179
+Training Recall is 0.9647387842486349
+Training f1 is 0.9646254957837368
+
+Val Epoch 12, Batch 0, Loss: 0.61383
+Val Epoch: 12, Loss: 0.6138
+Val Accuracy at Epoch 12 is 68.750
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.8076923076923077
+Val Recall is 0.6875
+Val f1 is 0.6536796536796536
+Test Epoch 12, Batch 0, Loss: 0.66327
+Test Epoch: 12, Loss: 0.3670
+Test Accuracy at Epoch 12 is 86.859
+Test Macro AP is 0.9690165830167855
+Test Prec is 0.9081196581196582
+Test Recall is 0.8264957264957264
+Test f1 is 0.847086247086247
+++++++++++++++++++++++++++++++
+Epoch 12 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-12 is 48.73112392425537
+
+-------------------------------------
+Epoch 13 started
+train at epoch 13
+Learning rate is: 0.0009190601107181689
+Training Epoch 13, Batch 0, Loss: 0.01584
+Training Epoch: 13, Loss: 0.0704
+Training Accuracy at Epoch 13 is 97.316
+Training Macro AP is 0.9985968472553437
+Training Prec is 0.9655015744619664
+Training Recall is 0.9641363450482308
+Training f1 is 0.9648162838009205
+
+Time taken for Epoch-13 is 43.893096923828125
+
+-------------------------------------
+Epoch 14 started
+train at epoch 14
+Learning rate is: 0.0008983172782286181
+Training Epoch 14, Batch 0, Loss: 0.07739
+Training Epoch: 14, Loss: 0.0676
+Training Accuracy at Epoch 14 is 97.604
+Training Macro AP is 0.9986089394157707
+Training Prec is 0.9689531071368827
+Training Recall is 0.9682662432946044
+Training f1 is 0.9686090038139579
+
+Val Epoch 14, Batch 0, Loss: 0.65141
+Val Epoch: 14, Loss: 0.6514
+Val Accuracy at Epoch 14 is 56.250
+Val Macro AP is 0.7354978354978355
+Val Prec is 0.5634920634920635
+Val Recall is 0.5625
+Val f1 is 0.5607843137254902
+Test Epoch 14, Batch 0, Loss: 0.00753
+Test Epoch: 14, Loss: 0.4346
+Test Accuracy at Epoch 14 is 82.212
+Test Macro AP is 0.9559835223101804
+Test Prec is 0.8194717097487024
+Test Recall is 0.8405982905982906
+Test f1 is 0.8187522733160453
+Time taken for Epoch-14 is 48.356462240219116
+
+-------------------------------------
+Epoch 15 started
+train at epoch 15
+Learning rate is: 0.000875503518243909
+Training Epoch 15, Batch 0, Loss: 0.01652
+Training Epoch: 15, Loss: 0.0764
+Training Accuracy at Epoch 15 is 97.278
+Training Macro AP is 0.9983015998642532
+Training Prec is 0.9639500278018129
+Training Recall is 0.9648535758100598
+Training f1 is 0.9644006206743942
+
+Time taken for Epoch-15 is 40.659138441085815
+
+-------------------------------------
+Epoch 16 started
+train at epoch 16
+Learning rate is: 0.0008507374438531607
+Training Epoch 16, Batch 0, Loss: 0.01840
+Training Epoch: 16, Loss: 0.0676
+Training Accuracy at Epoch 16 is 97.335
+Training Macro AP is 0.998761556453981
+Training Prec is 0.965859998903176
+Training Recall is 0.9642653773062952
+Training f1 is 0.96505904223981
+
+Val Epoch 16, Batch 0, Loss: 0.37309
+Val Epoch: 16, Loss: 0.3731
+Val Accuracy at Epoch 16 is 81.250
+Val Macro AP is 0.959375
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 16, Batch 0, Loss: 0.41621
+Test Epoch: 16, Loss: 0.2607
+Test Accuracy at Epoch 16 is 89.583
+Test Macro AP is 0.9669744423624244
+Test Prec is 0.8868289268213883
+Test Recall is 0.8935897435897435
+Test f1 is 0.8898876343487597
+++++++++++++++++++++++++++++++
+Epoch 16 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-16 is 48.989644289016724
+
+-------------------------------------
+Epoch 17 started
+train at epoch 17
+Learning rate is: 0.0008241478186004281
+Training Epoch 17, Batch 0, Loss: 0.04619
+Training Epoch: 17, Loss: 0.0655
+Training Accuracy at Epoch 17 is 97.469
+Training Macro AP is 0.9986868770073116
+Training Prec is 0.9670874537664244
+Training Recall is 0.9666315460296842
+Training f1 is 0.9668592024398133
+
+Time taken for Epoch-17 is 42.19752526283264
+
+-------------------------------------
+Epoch 18 started
+train at epoch 18
+Learning rate is: 0.0007958728870184783
+Training Epoch 18, Batch 0, Loss: 0.11881
+Training Epoch: 18, Loss: 0.0614
+Training Accuracy at Epoch 18 is 97.584
+Training Macro AP is 0.9989396719520154
+Training Prec is 0.9683810348560294
+Training Recall is 0.9683810348560294
+Training f1 is 0.9683810348560294
+
+Val Epoch 18, Batch 0, Loss: 0.36373
+Val Epoch: 18, Loss: 0.3637
+Val Accuracy at Epoch 18 is 81.250
+Val Macro AP is 0.9293650793650794
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 18, Batch 0, Loss: 0.26754
+Test Epoch: 18, Loss: 0.2583
+Test Accuracy at Epoch 18 is 88.622
+Test Macro AP is 0.9694758308049111
+Test Prec is 0.8780132796912308
+Test Recall is 0.8799145299145299
+Test f1 is 0.8789399044176114
+Time taken for Epoch-18 is 46.121389865875244
+
+-------------------------------------
+Epoch 19 started
+train at epoch 19
+Learning rate is: 0.0007660596558690997
+Training Epoch 19, Batch 0, Loss: 0.05376
+Training Epoch: 19, Loss: 0.0524
+Training Accuracy at Epoch 19 is 97.949
+Training Macro AP is 0.9992494576886285
+Training Prec is 0.9743635336411023
+Training Recall is 0.9718079430372134
+Training f1 is 0.9730766071041014
+
+Time taken for Epoch-19 is 40.536937952041626
+
+-------------------------------------
+Epoch 20 started
+train at epoch 20
+Learning rate is: 0.0007348631298269113
+Training Epoch 20, Batch 0, Loss: 0.02082
+Training Epoch: 20, Loss: 0.0546
+Training Accuracy at Epoch 20 is 97.929
+Training Macro AP is 0.9991296459834084
+Training Prec is 0.9733351226894794
+Training Recall is 0.9724103822376176
+Training f1 is 0.972871550745545
+
+Val Epoch 20, Batch 0, Loss: 0.43644
+Val Epoch: 20, Loss: 0.4364
+Val Accuracy at Epoch 20 is 93.750
+Val Macro AP is 0.906795634920635
+Val Prec is 0.9444444444444444
+Val Recall is 0.9375
+Val f1 is 0.9372549019607843
+Test Epoch 20, Batch 0, Loss: 0.24951
+Test Epoch: 20, Loss: 0.2243
+Test Accuracy at Epoch 20 is 90.545
+Test Macro AP is 0.9810100156470671
+Test Prec is 0.912073060856745
+Test Recall is 0.8858974358974359
+Test f1 is 0.8961194333069042
+++++++++++++++++++++++++++++++
+Epoch 20 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-20 is 45.676422119140625
+
+-------------------------------------
+Epoch 21 started
+train at epoch 21
+Learning rate is: 0.0007024455055804957
+Training Epoch 21, Batch 0, Loss: 0.00776
+Training Epoch: 21, Loss: 0.0532
+Training Accuracy at Epoch 21 is 97.968
+Training Macro AP is 0.9992025922440467
+Training Prec is 0.9736183767350894
+Training Recall is 0.9731560943927257
+Training f1 is 0.9733869352925775
+
+Time taken for Epoch-21 is 38.28530478477478
+
+-------------------------------------
+Epoch 22 started
+train at epoch 22
+Learning rate is: 0.000668975328540884
+Training Epoch 22, Batch 0, Loss: 0.01080
+Training Epoch: 22, Loss: 0.0421
+Training Accuracy at Epoch 22 is 98.390
+Training Macro AP is 0.999469589531584
+Training Prec is 0.9798231813941124
+Training Recall is 0.9779453946260614
+Training f1 is 0.9788794272826293
+
+Val Epoch 22, Batch 0, Loss: 0.57901
+Val Epoch: 22, Loss: 0.5790
+Val Accuracy at Epoch 22 is 75.000
+Val Macro AP is 0.897159090909091
+Val Prec is 0.7666666666666666
+Val Recall is 0.75
+Val f1 is 0.746031746031746
+Test Epoch 22, Batch 0, Loss: 0.14970
+Test Epoch: 22, Loss: 0.4163
+Test Accuracy at Epoch 22 is 84.776
+Test Macro AP is 0.9697993377823643
+Test Prec is 0.8425385351990857
+Test Recall is 0.8645299145299146
+Test f1 is 0.844297882734873
+Time taken for Epoch-22 is 45.14320492744446
+
+-------------------------------------
+Epoch 23 started
+train at epoch 23
+Learning rate is: 0.0006346266165418173
+Training Epoch 23, Batch 0, Loss: 0.00840
+Training Epoch: 23, Loss: 0.0433
+Training Accuracy at Epoch 23 is 98.390
+Training Macro AP is 0.9994772235110089
+Training Prec is 0.9793695720372997
+Training Recall is 0.9784330422650405
+Training f1 is 0.9789000950243127
+
+Time taken for Epoch-23 is 39.77050471305847
+
+-------------------------------------
+Epoch 24 started
+train at epoch 24
+Learning rate is: 0.0005995779550878426
+Training Epoch 24, Batch 0, Loss: 0.00220
+Training Epoch: 24, Loss: 0.0401
+Training Accuracy at Epoch 24 is 98.620
+Training Macro AP is 0.9994989371699462
+Training Prec is 0.982846342541082
+Training Recall is 0.980956724639773
+Training f1 is 0.9818966519565395
+
+Val Epoch 24, Batch 0, Loss: 0.56844
+Val Epoch: 24, Loss: 0.5684
+Val Accuracy at Epoch 24 is 68.750
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.8076923076923077
+Val Recall is 0.6875
+Val f1 is 0.6536796536796536
+Test Epoch 24, Batch 0, Loss: 0.77356
+Test Epoch: 24, Loss: 0.4259
+Test Accuracy at Epoch 24 is 85.737
+Test Macro AP is 0.9681321645490828
+Test Prec is 0.899157134256472
+Test Recall is 0.8123931623931624
+Test f1 is 0.8328512738709726
+Time taken for Epoch-24 is 47.04975080490112
+
+-------------------------------------
+Epoch 25 started
+train at epoch 25
+Learning rate is: 0.0005640115688542146
+Training Epoch 25, Batch 0, Loss: 0.01315
+Training Epoch: 25, Loss: 0.0421
+Training Accuracy at Epoch 25 is 98.275
+Training Macro AP is 0.999486091835692
+Training Prec is 0.9771938111741769
+Training Recall is 0.9776588487166534
+Training f1 is 0.9774260286967955
+
+Time taken for Epoch-25 is 40.43035101890564
+
+-------------------------------------
+Epoch 26 started
+train at epoch 26
+Learning rate is: 0.0005281123742660557
+Training Epoch 26, Batch 0, Loss: 0.02847
+Training Epoch: 26, Loss: 0.0448
+Training Accuracy at Epoch 26 is 98.217
+Training Macro AP is 0.9994497088869397
+Training Prec is 0.9772185011420458
+Training Recall is 0.9760526328450121
+Training f1 is 0.9766336779601867
+
+Val Epoch 26, Batch 0, Loss: 0.87181
+Val Epoch: 26, Loss: 0.8718
+Val Accuracy at Epoch 26 is 56.250
+Val Macro AP is 0.8907602813852814
+Val Prec is 0.7666666666666666
+Val Recall is 0.5625
+Val f1 is 0.4589371980676329
+Test Epoch 26, Batch 0, Loss: 0.55944
+Test Epoch: 26, Loss: 0.3540
+Test Accuracy at Epoch 26 is 87.340
+Test Macro AP is 0.9706800991821537
+Test Prec is 0.902167219172159
+Test Recall is 0.8363247863247864
+Test f1 is 0.8548610763528016
+Time taken for Epoch-26 is 47.68031287193298
+
+-------------------------------------
+Epoch 27 started
+train at epoch 27
+Learning rate is: 0.0004920670180825961
+Training Epoch 27, Batch 0, Loss: 0.07221
+Training Epoch: 27, Loss: 0.0306
+Training Accuracy at Epoch 27 is 98.965
+Training Macro AP is 0.9997251703828687
+Training Prec is 0.9869126337220748
+Training Recall is 0.9859613672993193
+Training f1 is 0.9864357753727725
+
+Time taken for Epoch-27 is 40.35465955734253
+
+-------------------------------------
+Epoch 28 started
+train at epoch 28
+Learning rate is: 0.0004560629069850751
+Training Epoch 28, Batch 0, Loss: 0.02317
+Training Epoch: 28, Loss: 0.0317
+Training Accuracy at Epoch 28 is 98.773
+Training Macro AP is 0.9996797081971703
+Training Prec is 0.9839395732602054
+Training Recall is 0.9839395732602054
+Training f1 is 0.9839395732602054
+
+Val Epoch 28, Batch 0, Loss: 0.73349
+Val Epoch: 28, Loss: 0.7335
+Val Accuracy at Epoch 28 is 68.750
+Val Macro AP is 0.9206845238095238
+Val Prec is 0.8076923076923077
+Val Recall is 0.6875
+Val f1 is 0.6536796536796536
+Test Epoch 28, Batch 0, Loss: 0.04897
+Test Epoch: 28, Loss: 0.5069
+Test Accuracy at Epoch 28 is 79.808
+Test Macro AP is 0.9809418143380662
+Test Prec is 0.8180187695516162
+Test Recall is 0.8341880341880341
+Test f1 is 0.7972437695989437
+Time taken for Epoch-28 is 45.24309182167053
+
+-------------------------------------
+Epoch 29 started
+train at epoch 29
+Learning rate is: 0.000420287233213664
+Training Epoch 29, Batch 0, Loss: 0.00471
+Training Epoch: 29, Loss: 0.0262
+Training Accuracy at Epoch 29 is 98.984
+Training Macro AP is 0.9998246923079429
+Training Prec is 0.9870475897535521
+Training Recall is 0.9863342233768733
+Training f1 is 0.9866902176171182
+
+Time taken for Epoch-29 is 50.944498777389526
+
+-------------------------------------
+Epoch 30 started
+train at epoch 30
+Learning rate is: 0.000384926001319309
+Training Epoch 30, Batch 0, Loss: 0.00260
+Training Epoch: 30, Loss: 0.0218
+Training Accuracy at Epoch 30 is 99.195
+Training Macro AP is 0.9998465710669554
+Training Prec is 0.9904042454085064
+Training Recall is 0.9884850496740516
+Training f1 is 0.9894397136413147
+
+Val Epoch 30, Batch 0, Loss: 0.42284
+Val Epoch: 30, Loss: 0.4228
+Val Accuracy at Epoch 30 is 81.250
+Val Macro AP is 0.9415178571428571
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 30, Batch 0, Loss: 0.24469
+Test Epoch: 30, Loss: 0.2119
+Test Accuracy at Epoch 30 is 92.468
+Test Macro AP is 0.9793806198373508
+Test Prec is 0.9183339672879423
+Test Recall is 0.9217948717948719
+Test f1 is 0.9199945440905681
+++++++++++++++++++++++++++++++
+Epoch 30 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-30 is 80.2769832611084
+
+-------------------------------------
+Epoch 31 started
+train at epoch 31
+Learning rate is: 0.0003501630610905968
+Training Epoch 31, Batch 0, Loss: 0.00276
+Training Epoch: 31, Loss: 0.0271
+Training Accuracy at Epoch 31 is 99.041
+Training Macro AP is 0.9997743342664975
+Training Prec is 0.9874527916095355
+Training Recall is 0.9874527916095355
+Training f1 is 0.9874527916095355
+
+Time taken for Epoch-31 is 58.5894558429718
+
+-------------------------------------
+Epoch 32 started
+train at epoch 32
+Learning rate is: 0.00031617915168364
+Training Epoch 32, Batch 0, Loss: 0.00162
+Training Epoch: 32, Loss: 0.0163
+Training Accuracy at Epoch 32 is 99.444
+Training Macro AP is 0.9999259465314073
+Training Prec is 0.9923689000393546
+Training Recall is 0.9930883548627649
+Training f1 is 0.9927279352925467
+
+Val Epoch 32, Batch 0, Loss: 0.46299
+Val Epoch: 32, Loss: 0.4630
+Val Accuracy at Epoch 32 is 75.000
+Val Macro AP is 0.9526289682539684
+Val Prec is 0.7666666666666666
+Val Recall is 0.75
+Val f1 is 0.746031746031746
+Test Epoch 32, Batch 0, Loss: 0.15147
+Test Epoch: 32, Loss: 0.2592
+Test Accuracy at Epoch 32 is 89.423
+Test Macro AP is 0.9763885975142242
+Test Prec is 0.8841517200823288
+Test Recall is 0.9008547008547009
+Test f1 is 0.8898823529411766
+Time taken for Epoch-32 is 59.327675580978394
+
+-------------------------------------
+Epoch 33 started
+train at epoch 33
+Learning rate is: 0.0002831509619247352
+Training Epoch 33, Batch 0, Loss: 0.01728
+Training Epoch: 33, Loss: 0.0164
+Training Accuracy at Epoch 33 is 99.387
+Training Macro AP is 0.9999322567030146
+Training Prec is 0.9926832634162206
+Training Recall is 0.9912383151716341
+Training f1 is 0.9919580077259247
+
+Time taken for Epoch-33 is 42.46214509010315
+
+-------------------------------------
+Epoch 34 started
+train at epoch 34
+Learning rate is: 0.0002512502116714574
+Training Epoch 34, Batch 0, Loss: 0.00124
+Training Epoch: 34, Loss: 0.0109
+Training Accuracy at Epoch 34 is 99.655
+Training Macro AP is 0.9999757443397205
+Training Prec is 0.9962068156880683
+Training Recall is 0.9947515335209641
+Training f1 is 0.9954763793458326
+
+Val Epoch 34, Batch 0, Loss: 0.24258
+Val Epoch: 34, Loss: 0.2426
+Val Accuracy at Epoch 34 is 93.750
+Val Macro AP is 0.9861111111111112
+Val Prec is 0.9444444444444444
+Val Recall is 0.9375
+Val f1 is 0.9372549019607843
+Test Epoch 34, Batch 0, Loss: 0.31622
+Test Epoch: 34, Loss: 0.2409
+Test Accuracy at Epoch 34 is 93.109
+Test Macro AP is 0.9729960964140741
+Test Prec is 0.9331910460942718
+Test Recall is 0.9192307692307693
+Test f1 is 0.9253519990429744
+++++++++++++++++++++++++++++++
+Epoch 34 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-34 is 47.16306447982788
+
+-------------------------------------
+Epoch 35 started
+train at epoch 35
+Learning rate is: 0.00022064275900837027
+Training Epoch 35, Batch 0, Loss: 0.02201
+Training Epoch: 35, Loss: 0.0100
+Training Accuracy at Epoch 35 is 99.751
+Training Macro AP is 0.999980424603481
+Training Prec is 0.9971000800961463
+Training Recall is 0.9963719900892449
+Training f1 is 0.9967353363966516
+
+Time taken for Epoch-35 is 42.851489543914795
+
+-------------------------------------
+Epoch 36 started
+train at epoch 36
+Learning rate is: 0.0001914877379192131
+Training Epoch 36, Batch 0, Loss: 0.00048
+Training Epoch: 36, Loss: 0.0100
+Training Accuracy at Epoch 36 is 99.732
+Training Macro AP is 0.9999601463355695
+Training Prec is 0.9967277964703659
+Training Recall is 0.9962429578311804
+Training f1 is 0.9964850669254348
+
+Val Epoch 36, Batch 0, Loss: 0.25711
+Val Epoch: 36, Loss: 0.2571
+Val Accuracy at Epoch 36 is 87.500
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.875
+Val Recall is 0.875
+Val f1 is 0.875
+Test Epoch 36, Batch 0, Loss: 0.28831
+Test Epoch: 36, Loss: 0.2205
+Test Accuracy at Epoch 36 is 92.468
+Test Macro AP is 0.9782403261556162
+Test Prec is 0.9212370792106572
+Test Recall is 0.9175213675213675
+Test f1 is 0.919307754742678
+Time taken for Epoch-36 is 47.18426823616028
+
+-------------------------------------
+Epoch 37 started
+train at epoch 37
+Learning rate is: 0.0001639367309189701
+Training Epoch 37, Batch 0, Loss: 0.02058
+Training Epoch: 37, Loss: 0.0085
+Training Accuracy at Epoch 37 is 99.751
+Training Macro AP is 0.9999799217970444
+Training Prec is 0.9971000800961463
+Training Recall is 0.9963719900892449
+Training f1 is 0.9967353363966516
+
+Time taken for Epoch-37 is 39.278770208358765
+
+-------------------------------------
+Epoch 38 started
+train at epoch 38
+Learning rate is: 0.00013813298094746506
+Training Epoch 38, Batch 0, Loss: 0.00051
+Training Epoch: 38, Loss: 0.0089
+Training Accuracy at Epoch 38 is 99.674
+Training Macro AP is 0.9999822807018067
+Training Prec is 0.9951386249236901
+Training Recall is 0.996343508695966
+Training f1 is 0.9957391385200436
+
+Val Epoch 38, Batch 0, Loss: 0.34629
+Val Epoch: 38, Loss: 0.3463
+Val Accuracy at Epoch 38 is 87.500
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.875
+Val Recall is 0.875
+Val f1 is 0.875
+Test Epoch 38, Batch 0, Loss: 0.45644
+Test Epoch: 38, Loss: 0.2494
+Test Accuracy at Epoch 38 is 92.788
+Test Macro AP is 0.9782336859116929
+Test Prec is 0.932771421686194
+Test Recall is 0.9132478632478632
+Test f1 is 0.9214182769669916
+Time taken for Epoch-38 is 49.266069650650024
+
+-------------------------------------
+Epoch 39 started
+train at epoch 39
+Learning rate is: 0.00011421064662199859
+Training Epoch 39, Batch 0, Loss: 0.00636
+Training Epoch: 39, Loss: 0.0046
+Training Accuracy at Epoch 39 is 99.904
+Training Macro AP is 0.9999978030237126
+Training Prec is 0.999110578164665
+Training Recall is 0.9983795434317192
+Training f1 is 0.9987443601525583
+
+Time taken for Epoch-39 is 42.8394296169281
+
+-------------------------------------
+Epoch 40 started
+train at epoch 40
+Learning rate is: 9.229410472111127e-05
+Training Epoch 40, Batch 0, Loss: 0.00349
+Training Epoch: 40, Loss: 0.0058
+Training Accuracy at Epoch 40 is 99.789
+Training Macro AP is 0.9999953421333929
+Training Prec is 0.9973603345501594
+Training Recall is 0.997117702244353
+Training f1 is 0.9972389408092642
+
+Val Epoch 40, Batch 0, Loss: 0.28761
+Val Epoch: 40, Loss: 0.2876
+Val Accuracy at Epoch 40 is 81.250
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 40, Batch 0, Loss: 0.29938
+Test Epoch: 40, Loss: 0.2520
+Test Accuracy at Epoch 40 is 92.468
+Test Macro AP is 0.9750900838601797
+Test Prec is 0.917873741915214
+Test Recall is 0.9226495726495727
+Test f1 is 0.9201252808606251
+Time taken for Epoch-40 is 53.48635458946228
+
+-------------------------------------
+Epoch 41 started
+train at epoch 41
+Learning rate is: 7.24973035259901e-05
+Training Epoch 41, Batch 0, Loss: 0.00079
+Training Epoch: 41, Loss: 0.0054
+Training Accuracy at Epoch 41 is 99.866
+Training Macro AP is 0.9999950800980585
+Training Prec is 0.9981224903383557
+Training Recall is 0.9983653027350797
+Training f1 is 0.9982438189396181
+
+Time taken for Epoch-41 is 45.3052282333374
+
+-------------------------------------
+Epoch 42 started
+train at epoch 42
+Learning rate is: 5.49231703816237e-05
+Training Epoch 42, Batch 0, Loss: 0.00652
+Training Epoch: 42, Loss: 0.0054
+Training Accuracy at Epoch 42 is 99.923
+Training Macro AP is 0.9999956661802151
+Training Prec is 0.9989962233287628
+Training Recall is 0.9989962233287628
+Training f1 is 0.9989962233287628
+
+Val Epoch 42, Batch 0, Loss: 0.35261
+Val Epoch: 42, Loss: 0.3526
+Val Accuracy at Epoch 42 is 81.250
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 42, Batch 0, Loss: 0.25811
+Test Epoch: 42, Loss: 0.2299
+Test Accuracy at Epoch 42 is 93.269
+Test Macro AP is 0.9795944142050482
+Test Prec is 0.9317857142857143
+Test Recall is 0.923931623931624
+Test f1 is 0.9275661931347079
+++++++++++++++++++++++++++++++
+Epoch 42 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-42 is 53.46532917022705
+
+-------------------------------------
+Epoch 43 started
+train at epoch 43
+Learning rate is: 3.966307655790563e-05
+Training Epoch 43, Batch 0, Loss: 0.00270
+Training Epoch: 43, Loss: 0.0058
+Training Accuracy at Epoch 43 is 99.847
+Training Macro AP is 0.9999928885440792
+Training Prec is 0.9979924466575256
+Training Recall is 0.9979924466575256
+Training f1 is 0.9979924466575256
+
+Time taken for Epoch-43 is 43.65401744842529
+
+-------------------------------------
+Epoch 44 started
+train at epoch 44
+Learning rate is: 2.679636219297582e-05
+Training Epoch 44, Batch 0, Loss: 0.02235
+Training Epoch: 44, Loss: 0.0057
+Training Accuracy at Epoch 44 is 99.847
+Training Macro AP is 0.9999929499562629
+Training Prec is 0.997511185548051
+Training Recall is 0.9984800942965049
+Training f1 is 0.9979944011647546
+
+Val Epoch 44, Batch 0, Loss: 0.30329
+Val Epoch: 44, Loss: 0.3033
+Val Accuracy at Epoch 44 is 87.500
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.875
+Val Recall is 0.875
+Val f1 is 0.875
+Test Epoch 44, Batch 0, Loss: 0.28039
+Test Epoch: 44, Loss: 0.2539
+Test Accuracy at Epoch 44 is 92.788
+Test Macro AP is 0.9779073605380256
+Test Prec is 0.9287163876204971
+Test Recall is 0.9166666666666667
+Test f1 is 0.9220292390353617
+Time taken for Epoch-44 is 52.72724223136902
+
+-------------------------------------
+Epoch 45 started
+train at epoch 45
+Learning rate is: 1.63899237887114e-05
+Training Epoch 45, Batch 0, Loss: 0.00085
+Training Epoch: 45, Loss: 0.0030
+Training Accuracy at Epoch 45 is 99.962
+Training Macro AP is 0.9999996670306563
+Training Prec is 0.9994981116643814
+Training Recall is 0.9994981116643814
+Training f1 is 0.9994981116643814
+
+Time taken for Epoch-45 is 45.949307441711426
+
+-------------------------------------
+Epoch 46 started
+train at epoch 46
+Learning rate is: 8.497866403054833e-06
+Training Epoch 46, Batch 0, Loss: 0.00002
+Training Epoch: 46, Loss: 0.0038
+Training Accuracy at Epoch 46 is 99.885
+Training Macro AP is 0.9999986019534258
+Training Prec is 0.9984943349931442
+Training Recall is 0.9984943349931442
+Training f1 is 0.9984943349931442
+
+Val Epoch 46, Batch 0, Loss: 0.32480
+Val Epoch: 46, Loss: 0.3248
+Val Accuracy at Epoch 46 is 81.250
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 46, Batch 0, Loss: 0.26372
+Test Epoch: 46, Loss: 0.2463
+Test Accuracy at Epoch 46 is 93.429
+Test Macro AP is 0.9774132679983787
+Test Prec is 0.9339487603860305
+Test Recall is 0.9252136752136753
+Test f1 is 0.9292256706326922
+++++++++++++++++++++++++++++++
+Epoch 46 is the best model till now for exp7!
+++++++++++++++++++++++++++++++
+Time taken for Epoch-46 is 52.760870695114136
+
+-------------------------------------
+Epoch 47 started
+train at epoch 47
+Learning rate is: 3.1612223474991597e-06
+Training Epoch 47, Batch 0, Loss: 0.00546
+Training Epoch: 47, Loss: 0.0036
+Training Accuracy at Epoch 47 is 99.847
+Training Macro AP is 0.9999984021269734
+Training Prec is 0.9982349325400579
+Training Recall is 0.9977486228380361
+Training f1 is 0.9979914668145342
+
+Time taken for Epoch-47 is 37.66578197479248
+
+-------------------------------------
+Epoch 48 started
+train at epoch 48
+Learning rate is: 4.077378522748809e-07
+Training Epoch 48, Batch 0, Loss: 0.00007
+Training Epoch: 48, Loss: 0.0039
+Training Accuracy at Epoch 48 is 99.885
+Training Macro AP is 0.9999971308940698
+Training Prec is 0.9992270033496522
+Training Recall is 0.9977628635346756
+Training f1 is 0.9984921264486109
+
+Val Epoch 48, Batch 0, Loss: 0.28455
+Val Epoch: 48, Loss: 0.2845
+Val Accuracy at Epoch 48 is 81.250
+Val Macro AP is 0.9704861111111112
+Val Prec is 0.8174603174603174
+Val Recall is 0.8125
+Val f1 is 0.8117647058823529
+Test Epoch 48, Batch 0, Loss: 0.29104
+Test Epoch: 48, Loss: 0.2533
+Test Accuracy at Epoch 48 is 93.269
+Test Macro AP is 0.9767876972775644
+Test Prec is 0.9326341266639775
+Test Recall is 0.9230769230769231
+Test f1 is 0.9274322169059012
+Time taken for Epoch-48 is 50.554553508758545
+
+-------------------------------------
+Epoch 49 started
+train at epoch 49
+Learning rate is: 2.517288084074032e-07
+Training Epoch 49, Batch 0, Loss: 0.00028
+Training Epoch: 49, Loss: 0.0043
+Training Accuracy at Epoch 49 is 99.847
+Training Macro AP is 0.9999948586785108
+Training Prec is 0.9982349325400579
+Training Recall is 0.9977486228380361
+Training f1 is 0.9979914668145342
+
+Time taken for Epoch-49 is 38.56467604637146
+
